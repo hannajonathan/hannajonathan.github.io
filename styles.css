@@ -1,12 +1,13 @@
 body {
-    background-color:cornsilk;
+    background-color: cornsilk;
 }
 h1 {
     color: cornflowerblue;
 }
 p {
     color: black;
-    width: 55%
+    width: 55%;
+    font-family: 'Lato', sans-serif;
 }
 a {
     color: cornflowerblue;
