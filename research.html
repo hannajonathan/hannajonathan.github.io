@@ -20,15 +20,65 @@
         <div class="row">
             <div class="side">
                 <h2>Research</h2>
-                <img src="/images/NRAO_25_image.png" alt="Plot" class="center">
+
+                <figure>
+                    <img src="/assets/NRAO_25_image.png" alt="Plot" class="center">
+                    <figcaption>Slice plots of each gridding function in UV space</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="/assets/NRAO_24_image.png" alt="Plot" class="center">
+                    <figcaption>RFI spectrogram in the time-frequency plane</figcaption>
+                </figure>
+
+                <figure>
+                    <video width="400" height="240" controls>
+                        <source src="/assets/RIT_23_video.mov" type="video/mp4">
+                    </video>
+                    <figcaption>Stars interacting with a binary black hole</figcaption>
+                </figure>
             </div>
             <div class="main">
-                <p>Work in progress...</p>
+                <h3>Anti-Aliasing Gridding Functions</h3>
+                <h4>National Radio Astronomy Observatory (Summer 2025)</h4>
+                <p>In progress! Check back soon.</p>
+
+                <h3>RFI Flagging in the UV-Domain</h3>
+                <h4>National Radio Astronomy Observatory (Summer 2024)</h4>
+                <p>
+                    Radio Frequency Interference (RFI) is a significant issue in the field of radio astronomy. At lower radio frequencies,
+                    below 1 GHz, the RFI environment is especially active and tends to contaminate observations significantly,
+                    resulting in poor image quality. There are several different algorithms and techniques used to flag RFI in the
+                    pre-correlation, post-correlation, and post-processing stages, both in the hardware and software realm; each one of 
+                    these tools has their own benefits and drawbacks. Most post-processing algorithms operate on the time-frequency plane.
+                </p>
+                <p>
+                    GRIDflag is a UV plane based algorithm designed to flag and remove intermittent RFI from interferometer observations.
+                    In aperture synthesis, the irregularly sampled visibilities in UV space are convolved with a gridding function to
+                    interpolate their values onto an evenly spaced UV grid. By taking advantage of the redundancy of visibilities inside
+                    each UV cell during this gridding process, we identify RFI-corrupted data by comparing these visibilities
+                    to some statistical threshold.
+                </p>
+                <p>
+                    GRIDflag shows potential to work effectively in Epoch of Reionization observations, where faint RFI is abundant.
+                </p>
+
+                <h3>Effects of Surrounding Stars on Binary Black Holes</h3>
+                <h4>Rochester Institute of Technology (Summer 2023)</h4>
+                <p>
+                    Binary black holes will inspiral (and, eventually, merge) due to the loss of energy from gravitational radiation.
+                    External forces on the system, such as gravity exerted by stars, oppose this inspiraling. Our goal is to analyze
+                    how the orbital eccentricity of some binary changes when these stars interact with the system.
+                </p>
+                <p>
+                    We utilized Post-Newtonian expansion to generate a simulation of a binary black hole and surrounding stars, using the
+                    Runge-Kutta-Fehlberg method with interpolation and Numba just-in-time compilation to optimize the simulation. Our results
+                    demonstrated that the binary actually spirals inward at a faster rate due to the stars entering and being
+                    flung out of the binary's orbit.
+                </p>
             </div>
         </div>
 
-        <div class="footer">
-            Hi this is the footer
-        </div>
+        <div class="footer">Contact: jshanna2 [at] illinois [dot] edu</div>
     </body>
 </html>
