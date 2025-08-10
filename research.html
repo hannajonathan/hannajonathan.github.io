@@ -41,7 +41,25 @@
             <div class="main">
                 <h3>Anti-Aliasing Gridding Functions</h3>
                 <h4>National Radio Astronomy Observatory (Summer 2025)</h4>
-                <p>In progress! Check back soon.</p>
+                <p>
+                    In aperture synthesis, visibilities, representing the Fourier component of the sky brightness distribution, are measured 
+                    and accumulated to form a UV plane. To obtain the sky brightness, a fast Fourier transform (FFT) is performed on the 
+                    visibilities. The FFT algorithm expects a uniformly sampled input. To satisfy this requirement, the visibility data 
+                    must be interpolated onto an evenly spaced grid using a gridding algorithm. The most commonly used gridding algorithm is
+                    convolutional resampling, in which each visibility is convolved with a "gridding convolution function" (GCF).
+                </p>
+                <p>
+                    This summer, I worked on utilizing five alternative GCFs that showed potential for stronger anti-aliasing 
+                    properties compared to the zeroth order prolate spheroidal GCF used in the Common Astronomy Software 
+                    Applications: The Blackman-Nuttall, Blackman-Harris, Flat Top, Dolph-Chebyshev, and Kaiser-Bessel apodization
+                    functions.
+                </p>
+                <p>
+                    Preliminary results showed that all of these GCF candidates except for Flat Top demonstrated a significant improvement in
+                    alias suppression, with an additional benefit of reducing point spread function noise as well. The GCFs all had an 
+                    increased support size, however. More analysis is currently being done on how significantly this increases the 
+                    computational cost.
+                </p>
 
                 <h3>RFI Flagging in the UV-Domain</h3>
                 <h4>National Radio Astronomy Observatory (Summer 2024)</h4>
