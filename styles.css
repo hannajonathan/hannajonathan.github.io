@@ -3,12 +3,13 @@
 /* Header, paragraph, font */
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #DBF3FE;
 }
 h1 {
     text-align: center;
 }
 h2 {
-    text-align: center;
+    text-align: start;
     font-size: xx-large;
 }
 h3 {
@@ -28,18 +29,18 @@ p {
     padding: 10px;
     text-align: center;
     font-size: x-large;
-    background-color: darksalmon;
+    background-color: #8FD9FB;
     color: white;
 }
 .footer {
     padding: 20px;
     text-align: center;
-    background-color: #333;
+    background-color: #3D5661;
     color: white;
 }
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #3D5661;
 }
 .navbar a {
     float: left;
@@ -49,34 +50,38 @@ p {
     padding: 10px 20px;
     text-decoration: none;
 }
+.navbar a.currentpage {
+    background-color: #8FD9FB;
+}
 .navbar a:hover {
-    background-color: darksalmon;
+    background-color: #8FD9FB;
 }
 
 /* Columns */
 .row {
     display: flex;
+    align-items: center;
 }
 .side {
     flex: 30%;
     padding: 20px;
-    background-color: lavender;
 }
 .main {
     flex: 70%;
     padding: 20px;
-    background-color: cornsilk;
 }
 
 /* Figures (images, videos) */
 figure {
-    border: 1px black solid;
-    background-color: cornsilk;
+    border: 0.5px #3D5661 double;
+    background-color: #3D5661;
     padding: 4px;
     margin: 10px;
 }
 figcaption {
-    padding: 3px;
+    padding: 2px;
+    background-color: #3D5661;
+    color: white;
     text-align: center;
 }
 .center {

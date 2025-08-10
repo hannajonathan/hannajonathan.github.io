@@ -14,29 +14,22 @@
         
         <div class="navbar">
             <a href="/index.html">Home</a>
-            <a href="/research.html">Research</a>
+            <a href="/research.html" class="currentpage">Research</a>
         </div>
+
+        <!-- <h2>Research</h2> -->
 
         <div class="row">
             <div class="side">
-                <h2>Research</h2>
-
                 <figure>
-                    <img src="/assets/NRAO_25_image.png" alt="Plot" class="center">
+                    <img src="/assets/NRAO_25_image1.png" alt="Plot" class="center">
                     <figcaption>Slice plots of each gridding function in UV space</figcaption>
                 </figure>
-
-                <figure>
-                    <img src="/assets/NRAO_24_image.png" alt="Plot" class="center">
-                    <figcaption>RFI spectrogram in the time-frequency plane</figcaption>
-                </figure>
-
-                <figure>
-                    <video width="400" height="240" controls>
-                        <source src="/assets/RIT_23_video.mov" type="video/mp4">
-                    </video>
-                    <figcaption>Stars interacting with a binary black hole</figcaption>
-                </figure>
+                <!-- TODO: decide if I actually want this, and do a "click to enlarge" thing with JavaScript -->
+                <!-- <figure>
+                    <img src="/assets/NRAO_25_image2.png" alt="Plot" class="center">
+                    <figcaption>Fractional difference slice plots of PSF noise using each gridding function compared to prolate spheroidal</figcaption>
+                </figure> -->
             </div>
             <div class="main">
                 <h3>Anti-Aliasing Gridding Functions</h3>
@@ -57,10 +50,20 @@
                 <p>
                     Preliminary results showed that all of these GCF candidates except for Flat Top demonstrated a significant improvement in
                     alias suppression, with an additional benefit of reducing point spread function noise as well. The GCFs all had an 
-                    increased support size, however. More analysis is currently being done on how significantly this increases the 
+                    increased support size, however. More analysis is currently being done on how significantly this affects the 
                     computational cost.
                 </p>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="side">
+                <figure>
+                    <img src="/assets/NRAO_24_image.png" alt="Plot" class="center">
+                    <figcaption>RFI spectrogram in the time-frequency plane</figcaption>
+                </figure>
+            </div>
+            <div class="main">
                 <h3>RFI Flagging in the UV-Domain</h3>
                 <h4>National Radio Astronomy Observatory (Summer 2024)</h4>
                 <p>
@@ -80,7 +83,19 @@
                 <p>
                     GRIDflag shows potential to work effectively in Epoch of Reionization observations, where faint RFI is abundant.
                 </p>
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="side">
+                <figure>
+                    <video width="400" height="240" controls>
+                        <source src="/assets/RIT_23_video.mov" type="video/mp4">
+                    </video>
+                    <figcaption>Stars interacting with a binary black hole</figcaption>
+                </figure>
+            </div>
+            <div class="main">
                 <h3>Effects of Surrounding Stars on Binary Black Holes</h3>
                 <h4>Rochester Institute of Technology (Summer 2023)</h4>
                 <p>
