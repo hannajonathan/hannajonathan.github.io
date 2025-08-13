@@ -50,6 +50,9 @@ p {
     padding: 10px 20px;
     text-decoration: none;
 }
+.navbar a.right {
+    float: right;
+}
 .navbar a.currentpage {
     background-color: #8FD9FB;
 }
