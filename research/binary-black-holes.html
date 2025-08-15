@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jonathan Hanna</title>
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Jonathan Hanna</h1>
+        </div>
+        
+        <div class="navbar">
+            <a href="/index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn currentpage">Research <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                <div class="dropdown-content">
+                    <a href="/research/gridding-functions.html">Gridding Functions</a>
+                    <a href="/research/radio-frequency-interference.html">Radio Frequency Inteference</a>
+                    <a href="/research/binary-black-holes.html" class="currentpage">Binary Black Holes</a>
+                </div>
+            </div>
+            <a href="https://www.linkedin.com/in/hannajonathan" class="right" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/hannajonathan" class="right" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+        </div>
+
+        <div class="row">
+            <div class="side">
+                <figure>
+                    <video width="400" height="240" controls>
+                        <source src="/assets/RIT_23_video.mov" type="video/mp4">
+                    </video>
+                    <figcaption>Stars interacting with a binary black hole</figcaption>
+                </figure>
+            </div>
+            <div class="main">
+                <h3>Effects of Surrounding Stars on Binary Black Holes</h3>
+                <h4>Rochester Institute of Technology (Summer 2023)</h4>
+                <p>
+                    Binary black holes will inspiral (and, eventually, merge) due to the loss of energy from gravitational radiation.
+                    External forces on the system, such as gravity exerted by stars, oppose this inspiraling. Our goal is to analyze
+                    how the orbital eccentricity of some binary changes when these stars interact with the system.
+                </p>
+                <p>
+                    We utilized Post-Newtonian expansion to generate a simulation of a binary black hole and surrounding stars, using the
+                    Runge-Kutta-Fehlberg method with interpolation and Numba just-in-time compilation to optimize the simulation. Our results
+                    demonstrated that the binary actually spirals inward at a faster rate due to the stars entering and being
+                    flung out of the binary's orbit.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">Contact: jshanna2 [at] illinois [dot] edu</div>
+    </body>
+</html>

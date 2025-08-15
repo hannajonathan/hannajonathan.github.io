@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>Jonathan Hanna</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -15,9 +16,16 @@
         <!-- TODO: use the same navbar across all files, this requires JavaScript -->
         <div class="navbar">
             <a href="/index.html" class="currentpage">Home</a>
-            <a href="/research.html">Research</a>
-            <a href="https://www.linkedin.com/in/jhanna4/" class="right" target="_blank">LinkedIn</a>
-            <a href="https://github.com/hannajonathan" class="right" target="_blank">GitHub</a>
+            <div class="dropdown">
+                <button class="dropbtn">Research <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                <div class="dropdown-content">
+                    <a href="/research/gridding-functions.html">Gridding Functions</a>
+                    <a href="/research/radio-frequency-interference.html">Radio Frequency Inteference</a>
+                    <a href="/research/binary-black-holes.html">Binary Black Holes</a>
+                </div>
+            </div>
+            <a href="https://www.linkedin.com/in/hannajonathan" class="right" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/hannajonathan" class="right" target="_blank"><i class="fa fa-github"></i> GitHub</a>
         </div>
 
         <div class="row">
